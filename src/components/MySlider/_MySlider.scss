@@ -1,12 +1,21 @@
 .slider {
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-lg {
+  width: 100%;
+}
+.slider-sm {
+  width: 300px;
 }
 .slider-container {
   width: 100vw;
 }
 .slider-inner {
   position: relative;
-  width: 500%;
+  // width: 500%;
   height: 10%;
   margin: 0;
   left: 0;

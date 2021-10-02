@@ -5,6 +5,7 @@ import MyButton, {
   ButtonType,
 } from "./components/MyButton/MyButton";
 import MySlider, { SliderSize } from "./components/MySlider/MySlider";
+import imageData from "./data/imageData";
 
 function App() {
   return (
@@ -35,37 +36,35 @@ function App() {
       </MyButton>
 
       <h2>Slider</h2>
-      <MySlider sliderSize={SliderSize.Large}>
-        <div className="slider-container">
-          <div className="slider-inner">
-            <div className="slider-item">
-              <img
-                src="https://source.unsplash.com/collection/190727/1600x900"
-                alt=""
-              />
+      <MySlider sliderSize={SliderSize.Small} photos={5} imageData={imageData}>
+        {/* <div className="slider-container"> */}
+        {/* <div className="slider-inner"> */}
+        {/* <img
+          src="https://source.unsplash.com/collection/190727/1600x900"
+          alt=""
+        />
 
-              <img
-                src="https://source.unsplash.com/collection/190728/1600x900"
-                alt=""
-              />
+        <img
+          src="https://source.unsplash.com/collection/190728/1600x900"
+          alt=""
+        />
 
-              <img
-                src="https://source.unsplash.com/collection/190726/1600x900"
-                alt=""
-              />
+        <img
+          src="https://source.unsplash.com/collection/190726/1600x900"
+          alt=""
+        />
 
-              <img
-                src="https://source.unsplash.com/collection/190725/1600x900"
-                alt=""
-              />
+        <img
+          src="https://source.unsplash.com/collection/190725/1600x900"
+          alt=""
+        />
 
-              <img
-                src="https://source.unsplash.com/collection/190723/1600x900"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        <img
+          src="https://source.unsplash.com/collection/190723/1600x900"
+          alt=""
+        /> */}
+        {/* </div> */}
+        {/* </div> */}
       </MySlider>
     </div>
   );
